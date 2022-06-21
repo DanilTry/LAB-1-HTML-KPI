@@ -1,0 +1,157 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+
+
+[class*="__container"]{
+    max-width: 1287px;
+    margin: 0 auto;
+    padding: 50px 50px;
+  }
+
+
+  /****************************main-page***************************************/
+
+.wrapper {
+
+}
+
+.main-page{
+    height: 650px;
+    background: url(/img/thumb_1079_location_photo_big.jpg);
+}
+.main-page__container {
+
+}
+.main-page__title {
+    font-size: 40px;
+    color: white;
+    padding: 0 0 25px 0;
+}
+.main-page__content {
+}
+.content-items {
+    
+}
+.content-item {
+    color: rgb(0, 0, 0);
+font-size: 25px;
+    
+}
+
+body{
+    color: white;
+}
+ol{
+    counter-reset: myCounter;
+}
+
+li{
+    list-style: none;
+    color: white;
+    line-height: 50px;
+}
+li::before{
+    color: white;
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    color: white;
+}
+a{
+    color: white;
+    margin: 0 0 0 20px;
+    transition: all 0.3s ease 0s;
+
+}
+
+a:hover{
+    color: rgb(0, 255, 38);
+}
+
+
+
+
+/***************************my-page********************************************/
+
+
+.mypage-bg{
+    height: 650px;
+    background: url(/img/thumb_1079_location_photo_big.jpg);
+}
+.mypage-content {
+padding: 50px;
+}
+
+.my-photo{
+    max-width: 300px;
+    max-height: 8000px;
+    box-shadow: 0 4px 18px rgba(144, 144, 144, 0.639);
+}
+.btn {
+    padding: 30px 0 0 0;
+}
+
+.mypage-btn{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    box-shadow: 0 4px 18px rgba(144, 144, 144, 0.639);
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+
+}
+
+.mypage-btn:hover{
+    color: white;
+    background-color: rgb(0, 255, 38);
+}
+
+
+
+/*********************************group*********************************************/
+
+.group-info__wrapper {
+}
+.group-info-main {
+    height: 650px;
+    background: url(/img/thumb_1079_location_photo_big.jpg);
+}
+.group-info__container {
+}
+.group-info__content {
+}
+.group__title {
+    font-size: 30px;
+    padding:  0 0 20px 0;
+}
+.group-text {
+    max-width: 500px;
+    line-height: 1.65;
+}
+.group-btn {
+    padding: 30px 0 0 0;
+  
+}
+.btn-group {
+   
+}
+
+.group-icon{
+    max-width: 35px;
+    max-height: 35px;
+}
